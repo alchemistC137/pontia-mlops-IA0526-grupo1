@@ -24,7 +24,7 @@ logger=logging.getLogger("adult-income")
 
 run_name = os.getenv('RUN_NAME', 'run_name not found')
 
-# Paths
+# Paths  
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data" / "raw"
 MODEL_DIR = PROJECT_ROOT / "models"
