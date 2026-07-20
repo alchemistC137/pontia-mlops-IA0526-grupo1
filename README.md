@@ -7,6 +7,8 @@ El pipeline completo abarca entrenamiento con seguimiento de experimentos en **M
 ### Estado
 > 🚧 En curso
 
+La API incluye documentación interactiva disponible en el endpoint `/docs`.
+
 ---
 
 ## 🗂 Estructura del proyecto
