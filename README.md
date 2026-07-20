@@ -44,6 +44,8 @@ pip install -r requirements.txt
 # 3. Colocar el dataset en la ruta esperada
 mkdir -p data/raw
 # Copiar adult.data y adult.test en data/raw/
+curl -o data/raw/adult.data https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data
+curl -o data/raw/adult.test https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test
 ```
 
 ---
