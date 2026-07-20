@@ -36,6 +36,7 @@ def main():
     script_start = time.time()
     logger.info(f"System info: {platform.platform()}")
 
+    # Load and preprocess data
     train_df, test_df = load_data(DATA_DIR / "adult.data", DATA_DIR / "adult.test")
     X_train, X_test, y_train, y_test, scaler, encoders = preprocess_data(train_df, test_df)
     mlflow.autolog()
