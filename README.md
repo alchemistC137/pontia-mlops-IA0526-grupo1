@@ -1,11 +1,11 @@
-# 💰 Predictor de Salario — Adult Income Dataset
+# Predictor de Salario — Adult Income Dataset
 
 Proyecto MLOps que entrena y despliega un modelo de Machine Learning capaz de predecir si una persona gana **más o menos de 50K$/año** en base a sus características demográficas y laborales, utilizando el clásico [Adult Census Income Dataset](https://archive.ics.uci.edu/dataset/2/adult).
 
 El pipeline completo abarca entrenamiento con seguimiento de experimentos en **MLflow (Azure ML)**, empaquetado en **Docker** y exposición del modelo como **API REST con FastAPI**.
 
 ### Estado
-> 🚧 En curso
+>  Finalizado
 
 ---
 
@@ -50,35 +50,9 @@ curl -o data/raw/adult.test https://archive.ics.uci.edu/ml/machine-learning-data
 
 ---
 
-## 🚀 Uso
+##  Uso
 
-### Entrenamiento local
 
-```bash
-# Variables de entorno necesarias
-export MLFLOW_TRACKING_URL=<tu_url_mlflow>
-export EXPERIMENT_NAME=salary-predictor
-export RUN_NAME=run_local_01
-
-cd src
-python main.py
-```
-
-El modelo, scaler y encoders se guardan en `models/` y se registran en MLflow automáticamente.
-
-### Levantar la API (Docker)
-
-```bash
-docker build -t salary-predictor -f deployment/Dockerfile .
-
-docker run -p 8000:8000 \
-  -e MLFLOW_TRACKING_URL=<url> \
-  -e MODEL_URI=<runs:/ID/model o models:/nombre/stage> \
-  -e AZURE_TENANT_ID=<tenant> \
-  -e AZURE_CLIENT_ID=<client_id> \
-  -e AZURE_CLIENT_SECRET=<secret> \
-  salary-predictor
-```
 
 ### Endpoints disponibles
 
@@ -115,7 +89,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## 🧰 Tecnologías
+## Tecnologías
 
 | Categoría | Herramienta |
 |-----------|-------------|
@@ -128,7 +102,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## 🤝 Contribuciones
+## Contribuciones
 
 1. Haz un fork del repositorio
 2. Crea una rama: `git checkout -b feature/mi-mejora`
