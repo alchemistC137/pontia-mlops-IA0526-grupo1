@@ -41,7 +41,7 @@ jobs:
         run: |
           IMAGE_URI="${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}:${{ github.run_number }}"
           
-                    # EXTRACT INDIVIDUAL AUTH FIELDS OUT OF YOUR EXISTING JSON SECRET
+          # EXTRACT INDIVIDUAL AUTH FIELDS OUT OF YOUR EXISTING JSON SECRET
           SP_TENANT=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r '.tenantId')
           SP_CLIENT=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r '.clientId')
           SP_SECRET=$(echo '${{ secrets.AZURE_CREDENTIALS }}' | jq -r '.clientSecret')
