@@ -139,4 +139,5 @@ curl -X POST http://localhost:8000/predict \
 
 ## 📄 Licencia
 
-Por definir.
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
