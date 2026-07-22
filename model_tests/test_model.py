@@ -47,3 +47,4 @@ def test_model_accuracy():
     predictions = model.predict(X_test_scaled)
     accuracy = accuracy_score(y_test, predictions)
     assert accuracy >= 0.80, f"Model accuracy below expected threshold: {accuracy:.2f}"
+
